@@ -23,7 +23,12 @@ const RegionDetails = () => {
   }
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return (
+      <div>
+        Error:&nbsp;
+        {error}
+      </div>
+    );
   }
 
   const region = regions.find((r) => r.regionid === regionIdAsNumber);
@@ -35,19 +40,30 @@ const RegionDetails = () => {
   return (
     <div>
       <div className="region-title">
-        <div className="region-map"></div>
-        <h2>{region.shortname}<br />
-        <small>Forecast: {region.intensity.forecast}<br />{region.intensity.index}</small></h2>
+        <div className="region-map" />
+        <h2>
+          {region.shortname}
+          <br />
+          <small>
+            Forecast:&nbsp;
+            {region.intensity.forecast}
+            <br />
+            {region.intensity.index}
+          </small>
+        </h2>
       </div>
       <div className="region-head"><h3>Generation Mix</h3></div>
       <ul className="region-content">
         {region.generationmix.map((mix) => (
           <li className="region-content-links" key={mix.fuel}>
-            {mix.fuel}: {mix.perc}%
+            {mix.fuel}
+            :&nbsp;
+            {mix.perc}
+            %
           </li>
         ))}
       </ul>
-  </div>
+    </div>
   );
 };
 

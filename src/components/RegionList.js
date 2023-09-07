@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchRegions } from '../redux/region/regionSlice';
 import { Link, useParams } from 'react-router-dom';
+import { fetchRegions } from '../redux/region/regionSlice';
 import './RegionList.css';
 import arrow from './images/right-arrow.png';
 
@@ -21,7 +21,12 @@ const RegionList = () => {
   }
 
   if (error) {
-    return <div>Error: {error}</div>;
+    return (
+      <div>
+        Error:&nbsp;
+        {error}
+      </div>
+    );
   }
 
   const filteredRegions = intensityIndex
@@ -31,7 +36,7 @@ const RegionList = () => {
   return (
     <div>
       <div className="region-title">
-        <div className={`region-map ${intensityIndex}`}></div>
+        <div className={`region-map ${intensityIndex}`} />
         {intensityIndex ? (
           <h2>{intensityIndex}</h2>) : (<h2>All Regions</h2>
         )}
@@ -40,18 +45,20 @@ const RegionList = () => {
       <ul className="region-content">
         {filteredRegions.map((region) => (
           <li className="region-content-links" key={region.regionid}>
-            <div className='region-name'>
+            <div className="region-name">
               <Link to={`/region/${region.regionid}`}>{region.shortname}</Link>
             </div>
-            <div className='region-details'>
+            <div className="region-details">
               <Link to={`/region/${region.regionid}`}>
-                Intensity Forecast: {region.intensity.forecast}<br />
+                Intensity Forecast:&nbsp;
+                {region.intensity.forecast}
+                <br />
                 {!intensityIndex && (
                   <span>{region.intensity.index}</span>
                 )}
               </Link>
             </div>
-            <div className="region-next"><Link to={`/region/${region.regionid}`}><img src={arrow} /></Link></div>
+            <div className="region-next"><Link to={`/region/${region.regionid}`}><img src={arrow} alt="View" /></Link></div>
           </li>
         ))}
       </ul>

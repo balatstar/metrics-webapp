@@ -5,7 +5,7 @@ export const fetchRegions = createAsyncThunk('regions/fetchRegions', async () =>
   const data = await response.json();
 
   const uniqueIntensityIndexValues = Array.from(
-    new Set(data.data[0].regions.map((region) => region.intensity.index))
+    new Set(data.data[0].regions.map((region) => region.intensity.index)),
   );
 
   const lowestForecastValues = {};
@@ -13,10 +13,10 @@ export const fetchRegions = createAsyncThunk('regions/fetchRegions', async () =>
   // Store the lowest forecast value for each intensity index
   uniqueIntensityIndexValues.forEach((intensityIndex) => {
     const regionsWithIntensity = data.data[0].regions.filter(
-      (region) => region.intensity.index === intensityIndex
+      (region) => region.intensity.index === intensityIndex,
     );
     const lowestForecast = Math.min(
-      ...regionsWithIntensity.map((region) => region.intensity.forecast)
+      ...regionsWithIntensity.map((region) => region.intensity.forecast),
     );
     lowestForecastValues[intensityIndex] = lowestForecast;
   });

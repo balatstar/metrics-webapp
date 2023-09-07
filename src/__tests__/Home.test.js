@@ -9,11 +9,11 @@ import Home from '../components/Home';
 describe('Home', () => {
   it('renders Home component', () => {
     const { container } = render(
-    <Provider store={store}>
-      <Router>
-        <Home />
-      </Router>
-    </Provider>,
+      <Provider store={store}>
+        <Router>
+          <Home />
+        </Router>
+      </Provider>,
     );
     expect(container).toMatchSnapshot();
   });

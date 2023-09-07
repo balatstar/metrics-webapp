@@ -1,5 +1,5 @@
 import configureStore from 'redux-mock-store';
-import regionSlice, { fetchRegions } from '../redux/region/regionSlice';
+import regionSlice from '../redux/region/regionSlice';
 
 const mockStore = configureStore([]);
 

@@ -66,6 +66,7 @@
 .home-content-desc {
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 14px;
 }
 
 .home-content-links a {
@@ -98,6 +99,3 @@
 .all {
   background: url(images/icon-all-region.svg) center center/100px no-repeat;
 }
-
-
-

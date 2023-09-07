@@ -9,11 +9,11 @@ import RegionList from '../components/RegionList';
 describe('RegionList', () => {
   it('renders RegionList component', () => {
     const { container } = render(
-    <Provider store={store}>
-      <Router>
-        <RegionList />
-      </Router>
-    </Provider>,
+      <Provider store={store}>
+        <Router>
+          <RegionList />
+        </Router>
+      </Provider>,
     );
     expect(container).toMatchSnapshot();
   });
