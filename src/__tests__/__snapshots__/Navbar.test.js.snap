@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders Navbar component 1`] = `
+<div>
+  <header>
+    <div
+      class="nav-back"
+    >
+      <img
+        src="previous.png"
+      />
+    </div>
+    <h1>
+      UK Carbon Intensity Indicator
+    </h1>
+    <div
+      class="nav-home"
+    >
+      <a
+        href="/"
+      >
+        <img
+          src="home.png"
+        />
+      </a>
+    </div>
+  </header>
+</div>
+`;
