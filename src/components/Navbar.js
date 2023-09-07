@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <header>
-      <div className="nav-back"><button onClick={goBack}><img src={previous} alt="Go Back" /></button></div>
+      <div className="nav-back"><button type="submit" onClick={goBack}><img src={previous} alt="Go Back" /></button></div>
       <h1>UK Carbon Intensity Indicator</h1>
       <div className="nav-home"><Link to="/"><img src={home} alt="Home" /></Link></div>
     </header>
