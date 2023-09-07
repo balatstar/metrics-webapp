@@ -12,6 +12,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -47,6 +48,12 @@
 
 - Displays carbon intensity forecasts for each region
 - Filters to view regions with specific intensity indices
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live demo](https://carbon-intensity.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,7 +99,7 @@ npm test
 
 You can deploy this project using:
 
-Deployment instructions to follow
+npm install
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
