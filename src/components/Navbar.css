@@ -15,3 +15,9 @@ header h1 {
 .nav-home {
   padding-right: 10px;
 }
+
+.nav-back button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}

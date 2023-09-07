@@ -1,5 +1,5 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import regionReducer from '../redux/region/regionSlice';
+import regionReducer from './region/regionSlice';
 
 const rootReducer = combineReducers({
   regions: regionReducer,

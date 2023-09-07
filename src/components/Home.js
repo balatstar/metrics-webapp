@@ -44,12 +44,13 @@ const Home = () => {
           <li className={`home-content-links ${intensityIndex}`} key={intensityIndex}>
             <Link to={`/intensity/${intensityIndex}`}>
               <span className="home-content-desc">
-                {intensityIndex}&nbsp;
+                {intensityIndex}
+                &nbsp;
                 Intensity
               </span>
-                <br />
-                Lowest forecast:&nbsp;
-                {lowestForecastValues[intensityIndex] || 'N/A'}
+              <br />
+              Lowest forecast:&nbsp;
+              {lowestForecastValues[intensityIndex] || 'N/A'}
             </Link>
           </li>
         ))}
