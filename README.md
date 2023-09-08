@@ -96,9 +96,9 @@ npm test
 
 ### Deployment
 
-You can deploy this project using:
+To build the app for production to the build folder, run the following command:
 
-npm install
+npm run build
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,11 +138,12 @@ If you like this project, please feel free to leave me a message on Twitter or L
 
 Warm kudos to Microverse for guidance and structure during my learning journey.
 
+Original design idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on [Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-Original design idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on [Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
