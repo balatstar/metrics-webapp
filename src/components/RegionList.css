@@ -1,0 +1,96 @@
+.region-title {
+  height: 175px;
+  display: flex;
+  background-color: #fb5192;
+}
+
+.region-title > * {
+  width: 50%;
+}
+
+.region-map {
+  background: url(images/united-kingdom.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.region-title .low {
+  background: url(images/icon-low.svg) center center/100px no-repeat;
+}
+
+.region-title .high {
+  background: url(images/icon-high.svg) center center/100px no-repeat;
+}
+
+.region-title .moderate {
+  background: url(images/icon-moderate.svg) center center/100px no-repeat;
+}
+
+.region-title .very {
+  background-size: 100px;
+  background-repeat: repeat-x;
+  background-position: left;
+}
+
+.region-title h2 {
+  padding-left: 20px;
+  padding-top: 60px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.region-head {
+  background-color: #df4782;
+}
+
+.region-head h3 {
+  margin: 0;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.region-content {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.region-content-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.region-content-links:nth-child(odd) {
+  background-color: #e94987;
+}
+
+.region-content-links:nth-child(even) {
+  background-color: #cb4175;
+}
+
+.region-content-links > * {
+  width: 47%;
+}
+
+.region-next {
+  width: 4%;
+}
+
+.region-name {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.region-name a,
+.region-details a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.region-details {
+  padding-right: 5px;
+  text-transform: capitalize;
+  text-align: right;
+}

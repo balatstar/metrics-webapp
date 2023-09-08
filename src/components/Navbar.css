@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ec4c8a;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: lowercase;
+}
+
+.nav-home {
+  padding-right: 10px;
+}
+
+.nav-back button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}

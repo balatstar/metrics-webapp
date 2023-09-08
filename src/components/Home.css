@@ -1,0 +1,101 @@
+.home-title {
+  height: 175px;
+  display: flex;
+  background-color: #fb5192;
+}
+
+.home-title > * {
+  width: 50%;
+}
+
+.home-map {
+  background: url(images/united-kingdom.svg) center center no-repeat;
+  background-size: contain;
+}
+
+.home-title h2 {
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 150px;
+}
+
+.home-head {
+  background-color: #df4782;
+}
+
+.home-head h3 {
+  margin: 0;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.home-content {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.home-content > * {
+  width: 50%;
+  height: 175px;
+}
+
+.home-content li:nth-of-type(1),
+.home-content li:nth-of-type(4),
+.home-content li:nth-of-type(5) {
+  background-color: #dc4882;
+}
+
+.home-content li:nth-of-type(2),
+.home-content li:nth-of-type(3),
+.home-content li:nth-of-type(6) {
+  background-color: #cb4175;
+}
+
+.home-content-links {
+  padding: 10px;
+  color: #fff;
+  text-align: right;
+}
+
+.home-content-desc {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.home-content-links a {
+  padding-top: 100px;
+  height: 155px;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  background: url(images/right-arrow.png) top right no-repeat;
+}
+
+.low {
+  background: url(images/icon-low.svg) center center/100px no-repeat;
+}
+
+.high {
+  background: url(images/icon-high.svg) center center/100px no-repeat;
+}
+
+.moderate {
+  background: url(images/icon-moderate.svg) center center/100px no-repeat;
+}
+
+.very {
+  background-size: 100px;
+  background-repeat: repeat-x;
+  background-position: left;
+}
+
+.all {
+  background: url(images/icon-all-region.svg) center center/100px no-repeat;
+}
